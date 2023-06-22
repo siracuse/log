@@ -31,13 +31,13 @@ spec:
       inter.broker.protocol.version: '3.3'
     storage:
       class: ibmc-vpc-block-10iops-tier
-      size: 40Gi
+      size: 20Gi
       type: persistent-claim
   zookeeper:
     replicas: 3
     storage:
       class: ibmc-vpc-block-10iops-tier
-      size: 6Gi
+      size: 2Gi
       type: persistent-claim	  
   entityOperator:
     topicOperator: {}
