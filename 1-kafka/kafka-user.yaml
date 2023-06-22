@@ -1,0 +1,11 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaUser
+metadata:
+  name: baligh #
+  labels:
+    strimzi.io/cluster: msp #
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+spec:
+  authentication:
+    type: tls
