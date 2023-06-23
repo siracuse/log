@@ -2,7 +2,7 @@ apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
   name: msp ##pas de tiret dans le nom du cluster
-  namespace: my-log #
+  namespace: openshift-gitops #
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:

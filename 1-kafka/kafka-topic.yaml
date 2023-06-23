@@ -4,7 +4,7 @@ metadata:
   name: infra-logs #
   labels:
     strimzi.io/cluster: msp #
-  namespace: my-log #
+  namespace: openshift-gitops #
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
