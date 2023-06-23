@@ -3,9 +3,11 @@ kind: OperatorGroup
 metadata:
   name: operatorgroup-redhat-logging
   namespace: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   targetNamespaces:
-  - <openshift-gitops
+  - openshift-gitops
 
 
 ---
@@ -14,6 +16,8 @@ kind: Subscription
 metadata:
   name: cluster-logging
   namespace: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   channel: stable-5.6
   name: cluster-logging
